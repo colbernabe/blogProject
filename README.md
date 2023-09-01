@@ -16,15 +16,16 @@ Clona este repositorio:
 
 Instala las dependencias de PHP:
 
-Copy code
+```
 composer install
+```
 Instala las dependencias de JavaScript:
 
-bash
-Copy code
+```
 yarn install
 # O, si prefieres npm:
 # npm install
+```
 Compila los assets con Webpack Encore:
 
 ```
@@ -34,9 +35,9 @@ yarn encore dev
 ```
 Inicia el servidor de desarrollo de Symfony:
 
-bash
-Copy code
+```
 symfony server:start -d
+```
 Accede a tu aplicación:
 
 Abre tu navegador web y visita http://localhost:8000.
