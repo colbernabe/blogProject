@@ -1,4 +1,12 @@
-{{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
-{{ form_end(form) }}
+<div class=" p-6 rounded-md">
+    {{ form_start(form, {'attr': {'class': 'max-w-md mx-auto'}}) }}
+        {{ form_row(form.nombres, {'attr': {'class': 'block w-full border p-2 mb-2'}}) }}
+        {{ form_row(form.apellidos, {'attr': {'class': 'block w-full border p-2 mb-2'}}) }}
+        {{ form_row(form.password, {'attr': {'class': 'block w-full border p-2 mb-2'}}) }}
+        {{ form_row(form.email, {'attr': {'class': 'block w-full border p-2 mb-4'}}) }}
+
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Guardar
+        </button>
+    {{ form_end(form) }}
+</div>
